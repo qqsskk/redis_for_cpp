@@ -6,11 +6,15 @@
 
 所有码包括：
 
-M_REDIS_OK = 0, //执行成功
-M_CONNECT_FAIL = -1, //连接redis失败
-M_CONTEXT_ERROR = -2, //RedisContext返回错误
-M_REPLY_ERROR = -3, //redisReply错误
-M_EXE_COMMAND_ERROR = -4 //redis命令执行错误
+M_REDIS_OK = 0, 执行成功
+
+M_CONNECT_FAIL = -1, 连接redis失败
+
+M_CONTEXT_ERROR = -2, RedisContext返回错误
+
+M_REPLY_ERROR = -3, redisReply错误
+
+M_EXE_COMMAND_ERROR = -4 redis命令执行错误
 
  
 tips：在链接hiredis时需要添加链接选项： -levent  -lhiredis
